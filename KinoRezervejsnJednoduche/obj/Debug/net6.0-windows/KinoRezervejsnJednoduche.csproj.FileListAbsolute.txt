@@ -1,0 +1,7 @@
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\KinoRezervejsnJednoduche.csproj.AssemblyReference.cache
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Pages\MainPage.baml
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Pages\MainPage.g.cs
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\KinoRezervejsnJednoduche_MarkupCompile.cache
+C:\Users\baudyvo20\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\KinoRezervejsnJednoduche_MarkupCompile.lref
