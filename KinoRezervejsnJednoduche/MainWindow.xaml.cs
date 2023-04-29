@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using KinoRezervejsnJednoduche.Pages;
 using MahApps.Metro.Controls;
 
 namespace kinoRezervejsnJednoduche
@@ -12,7 +12,7 @@ namespace kinoRezervejsnJednoduche
 		{
 			InitializeComponent();
 			// CinemaGenerator();
-			// Frame.NavigationService.Navigate(new MenuPage());
+			Frame.NavigationService.Navigate(new ListViewPage());
 		}
 	}
 }

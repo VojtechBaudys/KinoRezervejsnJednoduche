@@ -17,7 +17,7 @@ public class SaveManager
 		File.WriteAllText(filePath, JsonConvert.SerializeObject(model));
 	}
 	
-	// Load data form {save.json} file
+	// Load data form {filePath} file
 	// filePath - [string]
 	// Return T object
 	public T LoadData<T>(string filePath)

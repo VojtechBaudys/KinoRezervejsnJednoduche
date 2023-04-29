@@ -8,15 +8,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Model" />
-      <Folder Include="Page" />
-      <Folder Include="Resource" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="MahApps.Metro" Version="2.4.9" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
       <PackageReference Include="sqlite-net-pcl" Version="1.9.141-beta" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resource\Data\movies.json" />
+      <Content Include="Resource\Data\movies.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resource\Images\cinema.ico" />
+      <Content Include="Resource\Images\cinema.ico">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
