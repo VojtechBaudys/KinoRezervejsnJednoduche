@@ -1,11 +1,7 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using KinoRezervejsnJednoduche.Model;
 using KinoRezervejsnJednoduche.Pages;
-using KinoRezervejsnJednoduche.Service;
 
 namespace kinoRezervejsnJednoduche.Pages;
 
@@ -26,8 +22,7 @@ public partial class HallPage : Page
 		Style rowStyle = (FindResource("Row") as Style)!;
 		Style rowNumberStyle = (FindResource("RowNumber") as Style)!;
 		Style seatStyle = (FindResource("Seat") as Style)!;
-
-
+		
 		for (int row = 1; row <= _movie.Cinema.Rows; row++)
 		{
 			StackPanel seatRow = new StackPanel();
