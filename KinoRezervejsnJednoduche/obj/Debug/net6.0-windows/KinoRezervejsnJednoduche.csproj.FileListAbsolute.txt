@@ -66,3 +66,5 @@ C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\o
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\App.baml
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Pages\HallPage.g.cs
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Pages\HallPage.baml
+C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\bin\Debug\net6.0-windows\Resource\Images\seatGreen.png
+C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\bin\Debug\net6.0-windows\Resource\Images\seatRed.png

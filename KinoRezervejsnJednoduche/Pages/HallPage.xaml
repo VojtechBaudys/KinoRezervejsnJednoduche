@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:kinoRezervejsnJednoduche.Pages"
       mc:Ignorable="d"
-      Title="HallPage" Height="450" Width="800">
+      Title="HallPage" Height="1000" Width="1000">
 	<StackPanel>
 		<Grid>
 			<Grid.ColumnDefinitions>
@@ -21,7 +21,7 @@
 				HorizontalAlignment="Left"
 				MinWidth="20"
 				FontSize="16"
-				Content="Back to halls"
+				Content="Back to List"
 			/>
 			<Label
 				Grid.Column="1"
@@ -30,7 +30,7 @@
 				Margin="0"
 				Background="Beige"
 				FontSize="16"
-				Content="canvas" 
+				Content="canvas"
 			/>
 		</Grid>
 		<Grid Margin="20,50,20, 0">

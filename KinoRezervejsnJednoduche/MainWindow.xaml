@@ -8,10 +8,10 @@
 	xmlns:local="clr-namespace:kinoRezervejsnJednoduche"
 	mc:Ignorable="d"
 	Title="Cinema Rezervejsn System"
-	MinHeight="450"
-	MinWidth="800"
-	MaxHeight="450"
-	MaxWidth="800"
+	MinHeight="500"
+	MinWidth="1000"
+	MaxHeight="500"
+	MaxWidth="1000"
 	Icon="Resource/Images/cinema.ico"
 >
 	<Frame x:Name="Frame" NavigationUIVisibility="Hidden"/>

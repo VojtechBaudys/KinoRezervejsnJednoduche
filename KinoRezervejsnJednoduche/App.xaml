@@ -16,6 +16,13 @@
 		         <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/light.steel.xaml" />
 	         </ResourceDictionary.MergedDictionaries>
 
+	         <!-- Label -->
+	         <Style TargetType="Label">
+		         <Setter Property="HorizontalAlignment" Value="Center" />
+		         <Setter Property="Margin" Value="0,20" />
+		         <Setter Property="FontSize" Value="40" />
+	         </Style>
+	         
 	         <!-- Button BASE -->
 	         <Style TargetType="Button" x:Key="Button">
 		         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -61,8 +68,17 @@
 		         <Setter Property="Orientation" Value="Horizontal" />
 		         <Setter Property="HorizontalAlignment" Value="Center" />
 	         </Style>
+	         
+	         <!-- Seat -->
+	         <Style TargetType="Button" x:Key="Seat">
+		         <Setter Property="Background" Value="LimeGreen" />
+		         <Setter Property="BorderThickness" Value="2" />
+		         <Setter Property="Margin" Value="2" />
+		         <Setter Property="Height" Value="25" />
+		         <Setter Property="Width" Value="25" />
+	         </Style>
 		    
-	         <!-- Row Numer -->
+	         <!-- Row Number -->
 	         <Style TargetType="TextBlock" x:Key="RowNumber">
 		         <Setter Property="TextAlignment" Value="Center" />
 		         <Setter Property="Margin" Value="0, 3, 0, 10" />

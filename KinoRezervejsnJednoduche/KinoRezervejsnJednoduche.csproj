@@ -22,6 +22,14 @@
       <Content Include="Resource\Images\cinema.ico">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="Resource\Images\seatGreen.png" />
+      <Content Include="Resource\Images\seatGreen.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resource\Images\seatRed.png" />
+      <Content Include="Resource\Images\seatRed.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

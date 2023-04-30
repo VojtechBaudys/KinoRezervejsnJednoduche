@@ -9,5 +9,7 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/data/movies.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/cinema.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/seatgreen.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/seatred.png")]
 
 

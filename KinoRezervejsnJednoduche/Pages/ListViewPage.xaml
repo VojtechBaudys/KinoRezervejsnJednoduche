@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:KinoRezervejsnJednoduche.Pages"
       xmlns:system="clr-namespace:System;assembly=System.Runtime"
       mc:Ignorable="d"
-      Title="ListViewPage" Height="450" Width="800">
+      Title="ListViewPage" Height="500" Width="1000">
 
       <ListView Name="ListView" HorizontalAlignment="Center" MouseDoubleClick="ListView_OnMouseDoubleClick">
             <ListView.View>
