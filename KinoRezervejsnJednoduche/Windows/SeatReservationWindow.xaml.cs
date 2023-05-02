@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows;
 using KinoRezervejsnJednoduche.Model;
@@ -16,7 +17,8 @@ public partial class SeatReservationWindow : Window
 	{
 		_seatData = seatData;
 		_validationManager = new ValidationManager();
-		_db = new DatabaseHandler("Resource/Data/MyData.db");
+		_db = new DatabaseHandler(ConfigurationManager.AppSettings["DatabasePath"]!);
+		_db.CreateTable<SeatReservation>();
 		InitializeComponent();
 
 		LoadForm();
