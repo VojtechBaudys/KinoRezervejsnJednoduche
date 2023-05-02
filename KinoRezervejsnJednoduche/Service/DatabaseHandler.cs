@@ -11,7 +11,12 @@ public class DatabaseHandler
 	public DatabaseHandler(string databasePath)
 	{
 		_db = new SQLiteConnection(databasePath);
-		_db.CreateTable<SeatReservation>();
+	}
+
+	// Create Table of T Model
+	public void CreateTable<T>()
+	{
+		_db.CreateTable<T>();
 	}
 	
 	// Insert Model to Database
