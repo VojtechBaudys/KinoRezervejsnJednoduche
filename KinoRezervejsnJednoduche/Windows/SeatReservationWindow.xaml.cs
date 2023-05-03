@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows;
 using KinoRezervejsnJednoduche.Model;
+using kinoRezervejsnJednoduche.Pages;
 using KinoRezervejsnJednoduche.Service;
 
 namespace KinoRezervejsnJednoduche.Windows;
@@ -12,13 +13,18 @@ public partial class SeatReservationWindow : Window
 	Dictionary<string, string> _seatData;
 	ValidationManager _validationManager;
 	DatabaseHandler _db;
+	HallPage _hallPage;
 	
-	public SeatReservationWindow(Dictionary<string, string> seatData)
+	public SeatReservationWindow(Dictionary<string, string> seatData, HallPage hallPage)
 	{
-		_seatData = seatData;
-		_validationManager = new ValidationManager();
+		// DB
 		_db = new DatabaseHandler(ConfigurationManager.AppSettings["DatabasePath"]!);
 		_db.CreateTable<SeatReservation>();
+		
+		_seatData = seatData;
+		_hallPage = hallPage;
+		_validationManager = new ValidationManager();
+		
 		InitializeComponent();
 
 		LoadForm();
@@ -58,6 +64,7 @@ public partial class SeatReservationWindow : Window
 			
 			// Hide PopUp Window
 			Hide();
+			_hallPage.PrintHall();
 		}
 		else
 		{

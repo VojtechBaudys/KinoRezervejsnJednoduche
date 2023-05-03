@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using KinoRezervejsnJednoduche.Model;
 using KinoRezervejsnJednoduche.Pages;
+using KinoRezervejsnJednoduche.Service;
 using KinoRezervejsnJednoduche.Windows;
 using Newtonsoft.Json;
 
@@ -11,22 +14,32 @@ namespace kinoRezervejsnJednoduche.Pages;
 public partial class HallPage : Page
 {
 	Movie _movie;
+	DatabaseHandler _db;
 	
 	public HallPage(Movie movie)
 	{
 		InitializeComponent();
 		_movie = movie;
-		
+		_db = new DatabaseHandler(ConfigurationManager.AppSettings["DatabasePath"]!);
+
 		PrintHall();
 	}
 
 	// Print Hall
-	void PrintHall()
+	public void PrintHall()
 	{
 		// Get All Styles
 		Style rowStyle = (FindResource("Row") as Style)!;
 		Style rowNumberStyle = (FindResource("RowNumber") as Style)!;
 		Style seatStyle = (FindResource("Seat") as Style)!;
+
+		// Get Table
+		List<SeatReservation> reservedSeats = _db.GetTable<SeatReservation>("select * from SeatReservation where uuid = '" + _movie.Uuid + "'");
+		
+		// Reset Children
+		RowNumberL.Children.Clear();
+		RowNumberR.Children.Clear();
+		SeatStackPanel.Children.Clear();
 		
 		// Every Row In Hall
 		for (int row = 1; row <= _movie.Cinema.Rows; row++)
@@ -48,6 +61,8 @@ public partial class HallPage : Page
 			// Every Column In Hall
 			for (int seat = 1; seat <= _movie.Cinema.Columns; seat++)
 			{
+				SeatReservation currentSeatReservation = reservedSeats.Find(s => s.Row == row.ToString() && s.Column == seat.ToString())!;
+				
 				// Set Seat Info
 				Dictionary<string, string> seatData = new Dictionary<string, string>
 				{
@@ -58,8 +73,12 @@ public partial class HallPage : Page
 				
 				Button seatBtn = new Button();
 				
-				// Add Event, Seat Info, Style 
-				seatBtn.Click += ReservationPopUp;
+				// Add Event, Seat Info, Style
+				if (currentSeatReservation == null!)
+				{
+					seatBtn.Click += ReservationPopUp;
+					seatBtn.Background = Brushes.LimeGreen;
+				}
 				seatBtn.Tag = JsonConvert.SerializeObject(seatData);
 				seatBtn.Style = seatStyle;
 				
@@ -67,7 +86,7 @@ public partial class HallPage : Page
 				seatBtn.Content = seat.ToString();
 				seatRow.Children.Add(seatBtn);
 			}
-			
+
 			// Print All Rows
 			RowNumberL.Children.Add(rowNumberL);
 			RowNumberR.Children.Add(rowNumberR);
@@ -81,7 +100,7 @@ public partial class HallPage : Page
 		Button element = (Button)sender;
 		Dictionary<string, string> seatData = JsonConvert.DeserializeObject<Dictionary<string, string>>((string)element.Tag)!;
 		
-		SeatReservationWindow seatReservationWindow = new SeatReservationWindow(seatData);
+		SeatReservationWindow seatReservationWindow = new SeatReservationWindow(seatData, this);
 		seatReservationWindow.Show();
 	}
 
