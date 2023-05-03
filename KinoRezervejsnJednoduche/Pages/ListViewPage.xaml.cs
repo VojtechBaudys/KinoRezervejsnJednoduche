@@ -10,7 +10,7 @@ namespace KinoRezervejsnJednoduche.Pages;
 
 public partial class ListViewPage : Page
 {
-	private SaveManager _saveManager;
+	SaveManager _saveManager;
 	
 	public ListViewPage()
 	{
