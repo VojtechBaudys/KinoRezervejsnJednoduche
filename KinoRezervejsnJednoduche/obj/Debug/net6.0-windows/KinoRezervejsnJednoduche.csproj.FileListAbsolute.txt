@@ -71,3 +71,5 @@ C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\b
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Windows\SeatReservationWindow.g.cs
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Windows\SeatReservationWindow.baml
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\bin\Debug\net6.0-windows\KinoRezervejsnJednoduche.dll.config
+C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Windows\seatInfoWindow.g.cs
+C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\obj\Debug\net6.0-windows\Windows\seatInfoWindow.baml

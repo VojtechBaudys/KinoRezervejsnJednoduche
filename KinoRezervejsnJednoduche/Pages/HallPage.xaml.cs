@@ -79,6 +79,11 @@ public partial class HallPage : Page
 					seatBtn.Click += ReservationPopUp;
 					seatBtn.Background = Brushes.LimeGreen;
 				}
+				else
+				{
+					seatBtn.Click += InfoPopUp;
+				}
+				
 				seatBtn.Tag = JsonConvert.SerializeObject(seatData);
 				seatBtn.Style = seatStyle;
 				
@@ -92,6 +97,16 @@ public partial class HallPage : Page
 			RowNumberR.Children.Add(rowNumberR);
 			SeatStackPanel.Children.Add(seatRow);
 		}
+	}
+
+	// Show Info PopUp Window
+	void InfoPopUp(object sender, RoutedEventArgs e)
+	{
+		Button element = (Button)sender;
+		Dictionary<string, string> seatData = JsonConvert.DeserializeObject<Dictionary<string, string>>((string)element.Tag)!;
+		
+		seatInfoWindow seatInfoWindow = new seatInfoWindow(seatData);
+		seatInfoWindow.Show();
 	}
 
 	// Show Reservation PopUp Window

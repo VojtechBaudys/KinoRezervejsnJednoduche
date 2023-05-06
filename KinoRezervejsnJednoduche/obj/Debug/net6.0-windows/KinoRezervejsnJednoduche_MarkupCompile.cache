@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\vojta\RiderProjects\KinoRezervejsnJednoduche\KinoRezervejsnJednoduche\App.xaml
-4-141834056
+51750843841
 41111290238
-12-1513950348
+13117507212
 202582368236
-MainWindow.xaml;Pages\HallPage.xaml;Pages\ListViewPage.xaml;Windows\SeatReservationWindow.xaml;
+MainWindow.xaml;Pages\HallPage.xaml;Pages\ListViewPage.xaml;Windows\seatInfoWindow.xaml;Windows\SeatReservationWindow.xaml;
 
 False
 
